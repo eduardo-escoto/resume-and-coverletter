@@ -1,2 +1,8 @@
-# Archieve
-Archieve/
+
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!eduardo_escoto.latex
+!eduardo_escoto.pdf
