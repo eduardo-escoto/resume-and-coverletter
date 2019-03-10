@@ -1,0 +1,148 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+
+
+%------------- Setting Company Data
+\newcommand{\CompanyName}{Google}
+\newcommand{\Department}{HR Department}
+\newcommand{\EmployerName}{Timothy Ta}
+\newcommand{\CompanyAddress}{dofijsdo Street}
+\newcommand{\CompanyCSZP}{Palo Alto, CA, 92126}
+\newcommand{\Date}[1][\today]{#1}
+%--------------
+
+%------------- Setting User Data
+\newcommand{\Name}{Eduardo Escoto}
+\newcommand{\PersonalWebsite}{eduardoescot.io}
+\newcommand{\LinkedIn}{linkedin.com/in/e-esc}
+\newcommand{\Github}{github.com/eduardoescoto}
+\newcommand{\PersonalEmail}{e.esc@eduardoescot.io}
+\newcommand{\PhoneNumber}{+1 (858) 357-1868}
+\newcommand{\Location}{Isla Vista, CA}
+\newcommand{\Signature}{\includegraphics[height=2.2\baselineskip]{../assets/signature}}
+%--------------
+
+%----------- Formatting Stuff
+\setlength{\parindent}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-20pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+%-------------------------
+
+
+%------------------ Cover Letter Commands
+\newcommand{\Header}{
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{\PersonalWebsite}{\Huge{\Name}}} & \textbf{\LARGE Contact}\\
+  Learn more at: \href{http://PersonalWebsite}{\PersonalWebsite} & Write me at: \href{mailto:\PersonalEmail}{\PersonalEmail}\\
+  Connect with me at: \href{https://\LinkedIn}{\LinkedIn} & Talk to me at: \PhoneNumber \\
+  See what I'm working on at: \href{https://\Github}{\Github} & Find me at: \Location
+  \end{tabular*}\vspace{-5pt}
+  \section{}
+}
+
+\newcommand{\EmployerInformation}{
+  \begin{itemize}[leftmargin=0pt]
+    \item[]{
+      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \large{{\textbf{\EmployerName}}} & \large{{\textbf{\Date}}}
+    \end{tabular*}\vspace{-6pt}
+    }
+    \item[]{\large{\textbf{\Department}}}\vspace{-6pt}
+    \item[]{\large{\CompanyName}}\vspace{-6pt}
+    \item[]{\large{\CompanyAddress}}\vspace{-6pt}
+    \item[]{\large{\CompanyCSZP}}\vspace{-6pt} 
+  \end{itemize}
+}
+
+\newcommand{\Salutation}{
+  \vspace{30pt}
+  Dear \EmployerName{}, \par \bigskip
+}
+
+
+\newcommand{\CoverLetterParagraph}[1]{
+  \par
+  #1
+  \bigskip
+  }
+  
+\newcommand{\Closing}{
+  \vspace{30pt}
+  \par Sincerely, \bigskip
+  \par \Signature \medskip
+  \par \Name
+  }
+%------------------------------------
+
+
+%%%%%%%%%%%%%%%%  Cover Letter  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\Header
+\EmployerInformation
+
+\Salutation
+
+\CoverLetterParagraph{  
+  Hire me, it'll be worth your while. This letter is to express my interest in your posting on [job board] for [position].
+  After looking through what [company] wants out of this position, I am confident I'm a great match.
+  [Elaborate on academic qualifications and previous experience and how it ties to job requirements]
+  I've actually created this [project description] that uses [company tech stack] which can more ideally showcase my relevant skill set.
+}
+ 
+\CoverLetterParagraph{
+  I am graduating from the University of California at Santa Barbara with a B.A. in Sociology
+  and would like to put my education to work at Best Company. I read in the Somewhere Times
+  last week that you are launching a company-wide, high profile program. I am particularly
+  interested in the benefits area of Human Resources and would like to contribute to this new
+  project.
+}
+
+\CoverLetterParagraph{
+  As you will see on my résumé, I have taken a number of courses that gave me a good foundation in writing, math, and interpersonal communication. My grades are a good indication
+  that I complete tasks with excellent attention to detail and consistent follow through. In addition to my academic foundation, I interned during fall quarter with the Human Resources
+  Department of the Good Company. This experience provided me with a solid exposure to
+  basic benefits management. I am confident that those basics will enable me to quickly learn
+  your approach to benefits.
+  I would like very much to talk with you in the near future. I will contact you in the next couple weeks to discuss a convenient time to meet. Thank you for your time and consideration.
+}
+
+\CoverLetterParagraph{
+  oifsjiofjsdiofjsoi fuUUUUCK MEEEEEEDOISFDNODIFJODJFGOIDJFIOGJADJRGOIDOGIJADOIJFGOAIDJFGIOJDOIFGJAODJIOAJ
+  SGIAODGIJADOIFJGAODIJFGOIADJFGOIJDAFOGJDFOI OIDJGOID JFGIOJDOI OI JODJGOIJ DOFGJOD OJDOI GJZD
+  Z OIOG JDIOFGJ ODIFJGOIZDJFOIJ GOIDFJGOIDJFOGIJDZFO IJODJ ZOJFO JZODFGOI DZJOFJ OIDZFJGO DZJFGO IDOIJ D
+   IFODJGOIDJ IOGJD FJOIG DIO
+}
+
+\Closing
+
+\end{document}

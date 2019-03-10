@@ -1,0 +1,181 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+%------------- Setting User Data
+\newcommand{\Name}{Eduardo Escoto}
+\newcommand{\PersonalWebsite}{eduardoescot.io}
+\newcommand{\LinkedIn}{linkedin.com/in/e-esc}
+\newcommand{\Github}{github.com/eduardoescoto}
+\newcommand{\PersonalEmail}{e.esc@eduardoescot.io}
+\newcommand{\PhoneNumber}{+1 (858) 357-1868}
+\newcommand{\Location}{Isla Vista, CA}
+\newcommand{\Signature}{\includegraphics[height=2\baselineskip]{signature}}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\Header}{
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{\PersonalWebsite}{\Huge{\Name}}} & \textbf{\LARGE Contact}\\
+  Learn more at: \href{http://PersonalWebsite}{\PersonalWebsite} & Write me at: \href{mailto:\PersonalEmail}{\PersonalEmail}\\
+  Connect with me at: \href{https://\LinkedIn}{\LinkedIn} & Talk to me at: \PhoneNumber \\
+  See what I'm working on at: \href{https://\Github}{\Github} & Find me at: \Location
+  \end{tabular*}\vspace{-5pt}
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\Header
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\large University of California, Santa Barbara}{Santa Barbara, CA}
+      {Bachelor of Science in Mathematical Science and Statistical Science}{September 2017 -- June 2020}
+      \resumeItemListStart
+        \resumeItem{Concentration}
+        {Probability and Statistics}
+        \resumeItem{Organizations}
+          {Data Science club, Association for Women in Mathematics}
+          \resumeItem{Relevant Coursework}
+          {Data Science, Regression Analysis, Stochastic Systems, Real Analysis, Linear Algebra}
+      \resumeItemListEnd
+    \resumeSubheading
+      {\large San Diego Miramar College}{San Diego, CA}
+      {Associate of Science in Mathematics and Computer Science}{September 2014 -- June 2017}
+      \resumeItemListStart
+        \resumeItem{Organizations}
+        {Phi Theta Kappa Honors Society}
+        \resumeItem{Relevant Coursework}
+          {Data Structures, C++, Java, Visual Basic}
+        \resumeItem{Accomplishments}
+          {Honors Student, Deans List Scholar, Annual Research Symposium Presenter}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Starbucks Coffee}{San Diego, CA}
+      {Shift Supervisor and Barista}{June 2013 -- Present}
+      \resumeItemListStart
+        \resumeItem{Certified Coffee and Food Master}
+          {Succeeded in Coffee and Food master certifications and continued on to win the district Barista Championship in 2016. First Partner of the Quarter at store.}
+        \resumeItem{Maintains and Enforces Cleanliness Standards}
+          {Monitors store cleanliness in order to upkeep a standard of excellence. Quality and Safety Assessment score raised from a 93\% to a 99\%.}
+        \resumeItem{Upholds Drink and Food Standards}
+          {Bolstered store's food sales, and led store to win district food sales competition, and a sepatate whole bean coffee sales contest. }
+        \resumeItem{Manages Cash, Safe, and Inventory}
+          {Counts money for the day and ensures cash is not lost and profits are accounted for. Orders inventory and works towards optimizing storage and minimizing waste.}
+          \resumeItem{Prioritizes Stellar Customer Satisfaction}
+            {Leads a team of world-class baristas to create a positive, inclusive, and motivating work environment that customers consistently enjoy visiting.}
+      \resumeItemListEnd
+      \resumeSubheading
+        {Biosero Inc.}{San Diego, CA}
+        {Software Engineering Intern}{September 2016 -- September 2017}
+        \resumeItemListStart
+        \resumeItem{Driver Development}
+          {Developed drivers for a myriad of Bio-tech instruments for use in automization. These included, Robotic Arms Sealers/Desealers, Acoustic Dispensing Systems, Microplate Readers, and many more.}
+        \resumeItem{Product Design and Development}
+          {Created Bluetooth Barcode Scanner prototype that would allow for easier, and more flexible microplate tracking. Involved
+          modeling the design in Solidworks, developing a custom PCB with Eagle, working closely with a scanner manufacturer to secure bulk sale,
+          programming a driver for the scanner, and troubleshooting and testing the product. This project involved the entire product development cycle.}
+        \resumeItem{Database and UI/UX Engeering}
+          {Engineered and optimized microplate tracking database.
+          Developed and tested UI elements and collaborated with designers to clarify, and generate automatic product documentation.}
+        \resumeItem{MagneMotion Track Integration}
+        {Implemented magnetic track system for use in large scale and connected integrations. Utilized graph theory and queueing theory to streamline track movement algorithm. }
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{PrettyPastelBot}
+      {Twitter bot built in Node that generates a random pastel color and tweets it with its color info.}
+    \resumeSubItem{Law of Large Numbers Simulator}
+      {Simulator of the Strong Law of Large numbers crafted with React + Redux. Simulates infinite trials of identically distibuted random events to illustrate the effect of the Law of Large Numbers.}
+    \resumeSubItem{LOL Esports Data Scraper}
+      {Data mining project that scrapes data from Riot’s hidden LOL-Esports-Api, and aggregates the most important player data available into neat json files. Used for Sabermetrics Analysis on players.}
+    \resumeSubItem{Superconductor Analysis}
+      {Analysis of data gathered from more than 20,000 Superconductors to investigate the efficacy of a regression model in predicting Superconductor Critical Temperatures from elemental composition.}
+  \resumeSubHeadingListEnd
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Languages}
+    {Python, Javascript, C++, C\#, Java, R, Visual Basic, Shell Scripting, SQL, XAML, HTML, CSS.}
+  \resumeSubItem{Technologies and Tools}
+    {React, Redux, Apollo, Express, D3, Node, PyTorch, Scikit-learn, NumPy, Pandas, Rmarkdown, Shiny, Tidyverse, Firebase, Heroku, Git and Source Control, CLI tools.}
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
